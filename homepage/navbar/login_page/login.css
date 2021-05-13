@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+/*************************General*Layout****************************/
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background: #00ffc6;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    box-shadow: 0 1em 2em rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    padding: 1em;
+    margin: 0;
+}
+
+main {
+    flex: 1;   /* Force block to grow */
+}
+
+footer {
+    text-align: center;
+    color: #00cc44;
+    margin: 1em;
+}
+
+/********************************Text****************************/
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+}
+
+/********************************Links****************************/
+
+a {
+    color: #fff;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #f00;
+}
+
+
+/**********************************Navigation***********************/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 0.25em;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5em;
+    background: #fff;
+    color: #000;
+    border-radius: 0.5em;
+    text-decoration: none;
+    transition: all 0.5s;
+    width: auto;
+}
+
+nav ul li a:hover {
+    background: #fff;
+    color: #000;
+    transform: scale( 1.5 );
+}
+
+/************************************Images*************************/
+
+main img {
+    width: 100%;
+    border: 3px solid #fff;
+    border-radius: 0.5em;
+}
+
+/**************************************Tables***********************/
+table {
+    background: #fff;
+    color: #000;
+    margin: 1em auto;
+    border-collapse: collapse;
+}
+
+th {
+    background: #000;
+    color: #fff;
+    font-weight: normal;
+}
+
+th, td {
+    padding: 0.3em 1em;
+}
+
+tr {
+    border-bottom: 1px solid #000;
+}
+
+/*****************************************Forms*********************/
+
+form {
+    font-size: 1.5em;
+}
+
+form div {
+    margin: 0.5em 0;
+}
+
+label {
+    display: inline-block;
+    width: 8em;
+    margin-right: 0.5em;
+    text-align: right;
+}
+
+input, select {
+    font-size: 1em;
+}
+
+input[type=submit] {
+    display: block;
+    margin: 1em auto;
+    padding: 0.5em;
+    background: #fff;
+    color: #000;
+    border-radius: 0.5em;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+/*********************************Media*Queries*********************/
+
+@media screen and (min-width: 1000px) {
+    body {
+        max-width: 800px;   /* limit the width */
+        margin: 2em auto;   /* centre the body */
+        padding: 1em 2em;
+        border-radius: 1.5em;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 0.5em;
+        background: #fff;
+        color: #000;
+        border-radius: 0.5em;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+}
